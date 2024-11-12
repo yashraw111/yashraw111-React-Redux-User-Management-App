@@ -4,6 +4,7 @@
   import 'bootstrap/dist/css/bootstrap.css'
   import ReduxView from "./Layout/Crud/ReduxView";
   import ReduxUpdate from "./Layout/Crud/ReduxUpdate";
+import SingleUser from "./Layout/Crud/SingleUser";
 
   function App() {
     return (
@@ -14,6 +15,7 @@
             <Route path="/" element={<CreateRedux></CreateRedux>} ></Route>
             <Route path="/ReduxView" element={<ReduxView></ReduxView>} ></Route>
             <Route path="/UpdateRedux/:id" element={<ReduxUpdate></ReduxUpdate>} ></Route>
+            <Route path="/SingleUser/:id" element={<SingleUser></SingleUser>} ></Route>
           </Routes>
         </Router>
       </>

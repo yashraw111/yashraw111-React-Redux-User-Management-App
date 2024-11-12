@@ -48,6 +48,7 @@ const ReduxView = () => {
 
                    
                 <NavLink className="btn btn-warning  btn-sm ms-4" to={`/UpdateRedux/${user.id}`}>Upadate</NavLink>
+                <NavLink className="btn btn-warning  btn-sm ms-4" to={`/SingleUser/${user.id}`}>Singleuser</NavLink>
                   </td>
                 </tr>
               ))

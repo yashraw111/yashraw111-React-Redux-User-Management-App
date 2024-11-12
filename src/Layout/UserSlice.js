@@ -39,7 +39,6 @@ state.userList.push(action.payload)
 
         }
         
-
     }
 })
 
