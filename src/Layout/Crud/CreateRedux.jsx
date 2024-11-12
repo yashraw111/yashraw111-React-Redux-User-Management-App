@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom'
 const CreateRedux = () => {
 
     const {register,handleSubmit,formState:{errors},reset}= useForm()
-
     const dispatch = useDispatch()
     const redirect = useNavigate()
     function regist(data){
