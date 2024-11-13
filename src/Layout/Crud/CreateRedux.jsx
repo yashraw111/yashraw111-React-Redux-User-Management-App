@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 import { useDispatch } from 'react-redux'
 import { addUser } from '../UserSlice'
 import uuid4 from 'uuid4'
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 const CreateRedux = () => {
 
@@ -18,9 +18,13 @@ const CreateRedux = () => {
 
   return (
     <>
-     <div className="container mt-5">
-      <div className="row justify-content-center">
-        <div className="col-md-6">
+    <div className="CreateUser">
+     <div className="container">
+      <div className='d-flex justify-content-between pt-5'>
+        <a href=""></a>
+      </div>
+      <div className="row justify-content-center align-items-center">
+        <div className="col-md-5">
           <div className="card shadow-lg">
             <div className="card-header bg-dark text-white">
               <h3 className="text-center">Register User</h3>
@@ -63,15 +67,17 @@ const CreateRedux = () => {
                   {errors.MobileNo && <small className="text-danger">Mobile number is required</small>}
                 </div>
 
-                <div className="text-center">
+                <div className="text-center d-flex justify-content-around align-items-center">
                   <button type="submit" className="btn btn-dark px-4">Submit</button>
+                  <NavLink to='/ReduxView'> <div className="AllUser btn btn-dark"> <a href="#"  className='text-white' > <i class="fa-solid fa-users"></i></a> </div></NavLink>
+
                 </div>
               </form>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div></div>
     </>
   )
 }

@@ -33,12 +33,13 @@ import { UpdateUser } from '../UserSlice'
   return (
     <>
 
-<div className="container mt-5">
+<div className="updateRedux">
+<div className="container ">
       <div className="row justify-content-center">
         <div className="col-md-6">
           <div className="card shadow-lg">
             <div className="card-header bg-dark text-white">
-              <h3 className="text-center">Register User</h3>
+              <h3 className="text-center">Update User</h3>
             </div>
             <div className="card-body p-4">
               <form onSubmit={handleSubmit(regist)}>
@@ -86,6 +87,7 @@ import { UpdateUser } from '../UserSlice'
           </div>
         </div>
       </div>
+    </div>
     </div>
     
     </>

@@ -12,7 +12,6 @@ const userSlice = createSlice({
         addUser:(state,action)=>{
             console.log("state",state);
             console.log("action",action);
-            
 state.userList.push(action.payload)
         },
         DeleteUser:(state,action)=>{
@@ -24,7 +23,6 @@ state.userList.push(action.payload)
                 })
                 state.userList = newData
             }
-
         },
         UpdateUser:(state,action)=>{
             const {id} =action.payload
@@ -41,6 +39,8 @@ state.userList.push(action.payload)
         
     }
 })
+
+
 
 
 export default userSlice.reducer

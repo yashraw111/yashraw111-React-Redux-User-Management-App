@@ -1,16 +1,17 @@
   import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
   import CreateRedux from "./Layout/Crud/CreateRedux";
-  import Header from "./Pages/Header";
+  // import Header from "./Pages/Header";
   import 'bootstrap/dist/css/bootstrap.css'
   import ReduxView from "./Layout/Crud/ReduxView";
   import ReduxUpdate from "./Layout/Crud/ReduxUpdate";
 import SingleUser from "./Layout/Crud/SingleUser";
-
+import './assets/css/style.css'
+import './assets/css/viewCss.css'
   function App() {
     return (
       <>
         <Router>
-          <Header></Header>
+          {/* <Header></Header> */}
           <Routes>
             <Route path="/" element={<CreateRedux></CreateRedux>} ></Route>
             <Route path="/ReduxView" element={<ReduxView></ReduxView>} ></Route>
