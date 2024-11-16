@@ -27,6 +27,7 @@ body {
   .table thead {
     background-color: #bcc1c6;
     color: #fff;
+    vertical-align: middle;
   }
   
   .btn-primary {
@@ -110,3 +111,43 @@ body {
     padding: 5px 20px;
     color: white;
   }
+
+
+  /* Make the table stack on smaller screens */
+@media (max-width: 768px) {
+  .custom-table thead {
+    display: none;
+  }
+
+  .custom-table tbody tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .custom-table tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    font-weight: bold;
+  }
+
+  .custom-table tbody td::before {
+    content: attr(data-label);
+    font-weight: normal;
+    color: #6c757d;
+  }
+}
+
+/* Reduce padding and font size on smaller screens */
+@media (max-width: 768px) {
+  .custom-table td, .custom-table th {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .custom-table .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}

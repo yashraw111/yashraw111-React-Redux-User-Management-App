@@ -1,6 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { act } from "react";
-
 const initialState ={
     userList:[]
 }
@@ -31,16 +29,12 @@ state.userList.push(action.payload)
                 return user.id == id
             })
 
-        if(indexNo != -1){
+            if(indexNo != -1){
             state.userList[indexNo]=action.payload
         }
-
         }
-        
     }
 })
-
-
 
 
 export default userSlice.reducer

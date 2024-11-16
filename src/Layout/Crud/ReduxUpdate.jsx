@@ -18,7 +18,6 @@ import { UpdateUser } from '../UserSlice'
             const SingleUser=userList.find((user)=>{
                 return user.id == id
             })
-
             console.log(SingleUser);
             reset(SingleUser)
             
