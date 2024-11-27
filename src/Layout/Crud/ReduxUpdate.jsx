@@ -120,7 +120,6 @@ const ReduxUpdate = () => {
           </div>
         </div>
       </div>
-
       <ToastContainer />
     </>
   )

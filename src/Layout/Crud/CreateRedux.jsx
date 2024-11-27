@@ -37,9 +37,7 @@ const CreateRedux = () => {
       <div className="CreateUser">
         <div className="container">
           <div className='d-flex justify-content-between pt-5'>
-            <NavLink to="/" className='text-decoration-none back'>
-              <i className="fa-solid fa-left-long"></i> Back
-            </NavLink>
+           
           </div>
           <div className="row justify-content-center align-items-center">
             <div className="col-md-6">
